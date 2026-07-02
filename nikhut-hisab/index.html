@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhut Hisab | Personal Finance Tracker</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; margin: 0; padding: 0; color: #334155; }
+        
+        /* Hero Section */
+        .hero { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; padding: 80px 20px; text-align: center; }
+        .hero h1 { font-size: 3em; margin-bottom: 10px; color: #38bdf8; }
+        .hero p { font-size: 1.2em; color: #cbd5e1; max-width: 600px; margin: 0 auto 30px auto; line-height: 1.6; }
+        
+        /* Download Button */
+        .download-btn { background: #10b981; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-size: 1.2em; font-weight: bold; display: inline-block; transition: 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .download-btn:hover { background: #059669; transform: translateY(-2px); }
+        
+        /* General Container */
+        .container { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+        .section-title { text-align: center; font-size: 2em; margin-bottom: 40px; color: #0f172a; }
+        
+        /* Screenshots Grid */
+        .screenshots-section { margin-bottom: 60px; text-align: center; }
+        .screenshots-grid { display: flex; gap: 20px; overflow-x: auto; padding: 10px; justify-content: center; flex-wrap: wrap; }
+        .screenshots-grid img { width: 220px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); border: 4px solid white; transition: 0.3s; }
+        .screenshots-grid img:hover { transform: scale(1.05); }
 
+        /* Features Grid */
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .feature-card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; transition: 0.3s; }
+        .feature-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+        .feature-card h3 { color: #1e293b; margin-bottom: 10px; font-size: 1.3em; }
+        .feature-card p { color: #64748b; font-size: 1em; line-height: 1.5; }
+        
+        /* Tech Stack */
+        .tech-stack { text-align: center; margin-top: 60px; padding: 40px; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .tech-tags { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+        .tag { background: #e2e8f0; color: #475569; padding: 8px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; }
+        
+        /* Footer */
+        .footer { text-align: center; margin-top: 50px; padding-bottom: 30px; }
+        .back-link { text-decoration: none; color: #3b82f6; font-weight: bold; font-size: 1.1em; transition: 0.3s; }
+        .back-link:hover { color: #1e40af; text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <!-- Hero Section (Top) -->
+    <div class="hero">
+        <h1>💸 Nikhut Hisab</h1>
+        <p>Your ultimate offline personal finance and budget tracker. Keep your daily income, expenses, and debts perfectly organized.</p>
+        
+        <!-- APK Download Link (সঠিক লিংক বসানো হয়েছে) -->
+        <a href="https://github.com/almamun252/Nikhut-Hisab-App/releases/download/v4.2.0/Nikhut-Hisab-v4.2.0.apk" class="download-btn">⬇️ Download APK (v4.2.0)</a>
+    </div>
+
+    <div class="container">
+        
+        <!-- Screenshots Section -->
+        <div class="screenshots-section">
+            <h2 class="section-title">📱 App Interface</h2>
+            <div class="screenshots-grid">
+                <!-- ছবি বসানোর জায়গা (src এর ভেতরে ছবির লিংক বা নাম দিন) -->
+                <img src="nikhut-hisab/images/908_1x_shots_so.png" alt="Screenshot 1">
+                <img src="nikhut-hisab/images/429_1x_shots_so.png" alt="Screenshot 2">
+                <img src="nikhut-hisab/images/216_1x_shots_so.png" alt="Screenshot 3">
+                <img src="nikhut-hisab/images/235_1x_shots_so.png" alt="Screenshot 4">
+            </div>
+            <p style="color: #64748b; font-size: 0.9em; margin-top: 15px;">* Replace the image paths above with your actual screenshot files.</p>
+        </div>
+
+        <!-- Features Section -->
+        <h2 class="section-title">✨ Key Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>📊 Financial Summary</h3>
+                <p>Effortlessly monitor your daily income, expenses, and debts with smart budgeting tools.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🔒 Offline-First</h3>
+                <p>Completely offline database. Your financial data remains 100% private and secure on your device.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🔔 Smart Notifications</h3>
+                <p>Stay on top of your budget limits and important financial goals with custom alerts.</p>
+            </div>
+            <div class="feature-card">
+                <h3>💱 Multi-Currency</h3>
+                <p>Track your finances across different currencies easily without any hassle.</p>
+            </div>
+        </div>
+
+        <!-- Tech Stack Section -->
+        <div class="tech-stack">
+            <h2 style="color: #0f172a; margin-top: 0;">🛠️ Built With Modern Tech</h2>
+            <p style="color: #64748b;">Developed focusing on smooth performance and modern Android standards.</p>
+            <div class="tech-tags">
+                <span class="tag">Kotlin</span>
+                <span class="tag">Jetpack Compose</span>
+                <span class="tag">MVVM Architecture</span>
+                <span class="tag">Room Database</span>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <a href="/" class="back-link">⬅ Back to Portfolio</a>
+        </div>
+    </div>
+</body>
+</html>
