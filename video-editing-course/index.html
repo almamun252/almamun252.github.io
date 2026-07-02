@@ -1,1 +1,446 @@
 
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobe Premiere Pro Video Editing Masterclass | Mamun</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Bengali', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.2), 0 8px 10px -6px rgba(56, 189, 248, 0.1);
+            border-color: #38bdf8;
+        }
+        .accordion-content {
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            max-height: 0;
+            overflow: hidden;
+        }
+        .accordion-button.active + .accordion-content {
+            max-height: 500px; /* Arbitrary large number */
+        }
+        .accordion-button.active svg {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-sky-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-900/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 font-bold text-xl tracking-wider">
+                    <span class="text-white">TECH</span><span class="text-sky-400">PHILO</span>
+                </div>
+                <div>
+                    <a href="#curriculum" class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Curriculum</a>
+                    <a href="#resources" class="text-slate-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Resources</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative overflow-hidden bg-slate-900 pt-16 pb-24 sm:pt-24 sm:pb-32 lg:pb-40 border-b border-slate-800">
+        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+            <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#0284c7] to-[#818cf8] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
+        </div>
+        
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-8">
+                <!-- Text Content -->
+                <div class="text-center lg:text-left flex-1">
+                    <div class="inline-flex items-center rounded-full px-3 py-1 text-sm font-semibold text-sky-400 ring-1 ring-inset ring-sky-400/20 mb-8 bg-sky-400/10">
+                        <span class="flex h-2 w-2 rounded-full bg-sky-400 mr-2 animate-pulse"></span>
+                        Free Masterclass Available
+                    </div>
+                    <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-6">
+                        Adobe Premiere Pro <br> <span class="gradient-text">Video Editing Masterclass</span>
+                    </h1>
+                    <p class="mt-6 text-lg leading-8 text-slate-300 max-w-2xl mx-auto lg:mx-0">
+                        শূন্য থেকে শুরু করে একজন প্রফেশনাল ভিডিও এডিটর হওয়ার সম্পূর্ণ গাইডলাইন। প্র্যাক্টিক্যাল প্রজেক্টস, সিক্রেট টিপস এবং প্রিমিয়াম রিসোর্স নিয়ে সাজানো হয়েছে এই কোর্সটি।
+                    </p>
+                    <div class="mt-10 flex items-center justify-center lg:justify-start gap-x-6">
+                        <a href="#classes" class="rounded-lg bg-sky-500 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400 transition-all">
+                            Start Learning Now
+                        </a>
+                        <a href="#resources" class="text-sm font-semibold leading-6 text-white hover:text-sky-300 flex items-center transition-colors">
+                            Resources <span aria-hidden="true" class="ml-1">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Profile Image -->
+                <div class="flex-shrink-0 relative">
+                    <div class="absolute -inset-4 bg-gradient-to-tr from-[#0ea5e9] to-[#818cf8] rounded-full blur-2xl opacity-40 animate-pulse"></div>
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-800 border-2 border-slate-700/50 shadow-2xl overflow-hidden group">
+                        <!-- Profile Image Link (Update the src attribute) -->
+                        <img src="profile.jpg" alt="Mamun - Instructor" class="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Course Curriculum Section -->
+    <div id="curriculum" class="py-20 bg-slate-950">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Course Curriculum</h2>
+                <p class="mt-4 text-lg text-slate-400">স্টেপ-বাই-স্টেপ সাজানো ভিডিও টিউটোরিয়াল এবং মডিউল</p>
+            </div>
+
+            <div class="space-y-4">
+                
+                <!-- Module 1 -->
+                <div class="border border-slate-700 rounded-xl bg-slate-900/50 overflow-hidden">
+                    <button class="accordion-button w-full flex items-center justify-between p-6 text-left focus:outline-none" onclick="toggleAccordion(this)">
+                        <div>
+                            <p class="text-sm font-semibold text-sky-400 mb-1">Module 1</p>
+                            <h3 class="text-lg font-bold text-white">ভূমিকা ও সেটআপ</h3>
+                        </div>
+                        <svg class="w-6 h-6 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content border-t border-slate-700/50">
+                        <div class="p-6 text-slate-300">
+                            <ul class="list-disc pl-5 space-y-2 mb-6">
+                                <li>Adobe Premiere Pro পরিচিতি</li>
+                                <li>সফটওয়্যার ইন্সটলেশন ও লাইসেন্স</li>
+                                <li>ইন্টারফেস পরিচিতি (Workspace overview)</li>
+                                <li>প্রজেক্ট সেটআপ ও নতুন প্রজেক্ট তৈরি</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="border border-slate-700 rounded-xl bg-slate-900/50 overflow-hidden">
+                    <button class="accordion-button w-full flex items-center justify-between p-6 text-left focus:outline-none" onclick="toggleAccordion(this)">
+                        <div>
+                            <p class="text-sm font-semibold text-sky-400 mb-1">Module 2</p>
+                            <h3 class="text-lg font-bold text-white">মিডিয়া আমদানি ও সংগঠন</h3>
+                        </div>
+                        <svg class="w-6 h-6 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7-7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content border-t border-slate-700/50">
+                        <div class="p-6 text-slate-300">
+                            <ul class="list-disc pl-5 space-y-2 mb-6">
+                                <li>ফাইল ইমপোর্ট করা</li>
+                                <li>মিডিয়া ব্রাউজার ও প্রজেক্ট প্যানেল ব্যবহার</li>
+                                <li>Bin তৈরি ও অর্গানাইজেশন</li>
+                                <li>প্রিভিউ দেওয়া ও ক্লিপ সিলেকশন</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 3 -->
+                <div class="border border-slate-700 rounded-xl bg-slate-900/50 overflow-hidden">
+                    <button class="accordion-button w-full flex items-center justify-between p-6 text-left focus:outline-none" onclick="toggleAccordion(this)">
+                        <div>
+                            <p class="text-sm font-semibold text-sky-400 mb-1">Module 3</p>
+                            <h3 class="text-lg font-bold text-white">টাইমলাইনে কাজ করা</h3>
+                        </div>
+                        <svg class="w-6 h-6 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content border-t border-slate-700/50">
+                        <div class="p-6 text-slate-300">
+                            <ul class="list-disc pl-5 space-y-2 mb-6">
+                                <li>Source এবং Program মনিটর</li>
+                                <li>ক্লিপ ড্র্যাগ ও ড্রপ করা</li>
+                                <li>কাট, ট্রিম, স্ন্যাপ এবং Ripple Edit</li>
+                                <li>ক্লিপ সিনক্রোনাইজেশন</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Complete Curriculum List -->
+                <div class="mt-8 bg-slate-900 border border-slate-800 rounded-xl p-8">
+                    <h3 class="text-xl font-bold text-white mb-6 border-b border-slate-700 pb-2">Advanced Modules</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-sky-400 font-semibold mb-2">অডিও এডিটিং</h4>
+                            <ul class="list-disc pl-5 text-sm text-slate-300 space-y-1">
+                                <li>অডিও ট্র্যাক আমদানি</li>
+                                <li>অডিও লেভেল অ্যাডজাস্টমেন্ট</li>
+                                <li>ব্যাকগ্রাউন্ড মিউজিক ও ভয়েসওভার</li>
+                                <li>অডিও ট্রানজিশন ও ইফেক্ট</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-sky-400 font-semibold mb-2">ভিডিও ইফেক্টস ও ট্রানজিশন</h4>
+                            <ul class="list-disc pl-5 text-sm text-slate-300 space-y-1">
+                                <li>ভিডিও ট্রানজিশন অ্যাপ্লাই করা</li>
+                                <li>মোশন, স্কেল, রোটেশন ও পজিশন এডিটিং</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-sky-400 font-semibold mb-2">টাইটেল ও গ্রাফিক্স</h4>
+                            <ul class="list-disc pl-5 text-sm text-slate-300 space-y-1">
+                                <li>Essential Graphics প্যানেল</li>
+                                <li>টেক্সট যুক্ত করা ও এনিমেট করা</li>
+                                <li>লোয়ার থার্ডস এবং ইনট্রো টেমপ্লেট ব্যবহার</li>
+                                <li>ব্র্যান্ডিং উপাদান যোগ করা</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-sky-400 font-semibold mb-2">কিওয়িং ও স্পেশাল ইফেক্ট</h4>
+                            <ul class="list-disc pl-5 text-sm text-slate-300 space-y-1">
+                                <li>Green screen/Chroma Key টেকনিক</li>
+                                <li>Masking ও Track Matte Key</li>
+                                <li>Slow motion ও Time remapping</li>
+                                <li>Multicam এডিটিং</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-sky-400 font-semibold mb-2">এক্সপোর্ট ও শেয়ারিং</h4>
+                            <ul class="list-disc pl-5 text-sm text-slate-300 space-y-1">
+                                <li>Sequence render করা</li>
+                                <li>Export settings</li>
+                                <li>Presets এবং Custom export</li>
+                                <li>ভিডিও কম্প্রেশন ও ফাইল সাইজ নিয়ন্ত্রণ</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-sky-400 font-semibold mb-2">Color Grading & Projects</h4>
+                            <ul class="list-disc pl-5 text-sm text-slate-300 space-y-1">
+                                <li>Color Correction ও Lumetri Color</li>
+                                <li>সোশ্যাল মিডিয়া ভিডিও বানানো</li>
+                                <li>ইউটিউব ব্লগ এডিটিং</li>
+                                <li>podcast তৈরি</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Classes Section -->
+    <div id="classes" class="py-20 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Class Recordings</h2>
+                <p class="mt-4 text-lg text-slate-400">Access all the recorded sessions directly from here</p>
+            </div>
+
+            <!-- Custom Message Box for Premium Content -->
+            <div id="premium-alert" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm transition-opacity">
+                <div class="bg-slate-800 border border-slate-700 rounded-xl shadow-2xl max-w-md w-full p-6 text-center transform transition-transform scale-95">
+                    <div class="w-16 h-16 bg-amber-500/20 text-amber-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Premium Content</h3>
+                    <p class="text-slate-300 mb-6">এই ভিডিওটি শুধুমাত্র যারা কোর্সটি কিনেছেন তাদের জন্য। অনুগ্রহ করে APS IT Institute এর সাথে যোগাযোগ করুন</p>
+                    <button onclick="closePremiumAlert()" class="bg-sky-500 hover:bg-sky-400 text-white font-semibold py-2 px-6 rounded-lg transition-colors w-full">Close</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Class Cards Generator Script -->
+                <script>
+                    const classes = [
+                        { title: "Class 1: Introduction & Setup", link: "#", type: "Drive", isPremium: true },
+                        { title: "Class 2: Facebook Live Session 1", link: "#", type: "Facebook", isPremium: true },
+                        { title: "Class 3: Facebook Live Session 2", link: "#", type: "Facebook", isPremium: true },
+                        { title: "Class 4: Timeline & Basic Cuts", link: "#", type: "Drive", isPremium: true },
+                        { title: "Class 5: Audio Editing Basics", link: "https://drive.google.com/file/d/1DS1MP_GXrWb13QtMDENA5k790NvfMO39/view?usp=sharing", type: "Drive", isPremium: false },
+                        { title: "Class 6: Transitions & Effects", link: "https://drive.google.com/file/d/1BGOc4uvzehiWxvM1I1IvdxWNb5pPPDye/view?usp=sharing", type: "Drive", isPremium: false },
+                        { title: "Class 7: Text & Graphics", link: "https://drive.google.com/file/d/1lRdIZuRnp6s_F9laD9Df-eLcs_WJVThF/view?usp=sharing", type: "Drive", isPremium: false },
+                        { title: "Class 8: Masking & Keying", link: "https://drive.google.com/file/d/1RW6DdROR9-ROmlpzadluR-l0xfMlxN3k/view?usp=sharing", type: "Drive", isPremium: false },
+                        { title: "Class 9: Advanced Techniques", link: "https://drive.google.com/file/d/1N2y53ivlD_LdUei4H9JYrR0O5Dab4pej/view?usp=sharing", type: "Drive", isPremium: false },
+                        { title: "Class 10: Color Grading", link: "https://drive.google.com/file/d/1nHHwwGxcjCw7orBdR625PBVgWTUrcsBN/view?usp=sharing", type: "Drive", isPremium: false },
+                        { title: "Class 11: Export & Final Polish", link: "https://drive.google.com/file/d/1EwNbMDMhxIIJg5xp8YFkxJ4ENy9z7cf3/view?usp=drivesdk", type: "Drive", isPremium: false }
+                    ];
+
+                    function showPremiumAlert(e) {
+                        e.preventDefault();
+                        const alertBox = document.getElementById('premium-alert');
+                        alertBox.classList.remove('hidden');
+                        setTimeout(() => {
+                            alertBox.firstElementChild.classList.remove('scale-95');
+                            alertBox.firstElementChild.classList.add('scale-100');
+                        }, 10);
+                    }
+
+                    function closePremiumAlert() {
+                        const alertBox = document.getElementById('premium-alert');
+                        alertBox.firstElementChild.classList.remove('scale-100');
+                        alertBox.firstElementChild.classList.add('scale-95');
+                        setTimeout(() => alertBox.classList.add('hidden'), 200);
+                    }
+
+                    classes.forEach((cls) => {
+                        const iconColor = cls.type === 'Facebook' ? 'text-blue-500' : 'text-sky-400';
+                        const bgColor = cls.type === 'Facebook' ? 'bg-blue-500/20' : 'bg-sky-500/20';
+                        
+                        // Style for premium vs free
+                        const cardStyle = cls.isPremium 
+                            ? 'bg-slate-800/60 border-slate-700/50 cursor-pointer' 
+                            : 'card-hover bg-slate-800 border-slate-700 group';
+                            
+                        const onClickAction = cls.isPremium ? 'onclick="showPremiumAlert(event)"' : `target="_blank" href="${cls.link}"`;
+                        
+                        const premiumBadge = cls.isPremium 
+                            ? `<span class="flex items-center text-xs font-medium px-2.5 py-0.5 rounded bg-amber-500/20 text-amber-400 border border-amber-500/30">
+                                 <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg>
+                                 Premium
+                               </span>` 
+                            : `<span class="text-xs font-medium px-2.5 py-0.5 rounded bg-slate-700 text-slate-300">${cls.type}</span>`;
+                            
+                        const actionText = cls.isPremium 
+                            ? 'Requires Access' 
+                            : 'Click to watch recording';
+
+                        document.write(`
+                            <a ${onClickAction} class="block p-6 rounded-xl relative overflow-hidden ${cardStyle}">
+                                ${!cls.isPremium ? '<div class="absolute inset-0 bg-gradient-to-r from-sky-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>' : ''}
+                                <div class="flex items-start justify-between">
+                                    <div class="flex items-center justify-center w-12 h-12 rounded-lg ${bgColor} ${iconColor} mb-4 ${cls.isPremium ? 'opacity-50' : ''}">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path>
+                                        </svg>
+                                    </div>
+                                    ${premiumBadge}
+                                </div>
+                                <h3 class="text-lg font-bold text-white mb-2 ${cls.isPremium ? 'text-slate-400' : 'group-hover:text-sky-400 transition-colors'}">${cls.title}</h3>
+                                <p class="text-sm text-slate-400 flex items-center">
+                                    ${actionText}
+                                    ${!cls.isPremium ? '<svg class="w-4 h-4 ml-1 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>' : ''}
+                                </p>
+                            </a>
+                        `);
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resources Section -->
+    <div id="resources" class="py-20 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="bg-gradient-to-br from-slate-900 to-slate-800 border border-sky-500/30 rounded-2xl p-8 sm:p-10 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-sky-500 rounded-full blur-3xl opacity-20"></div>
+                
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mb-8 flex items-center">
+                    <svg class="w-8 h-8 text-sky-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    Downloads & Resources
+                </h2>
+                
+                <div class="space-y-4">
+                    <!-- Audio Pack 1 -->
+                    <a href="https://drive.google.com/drive/folders/1ukawl3-Xri4hoZXe-gtGNKTieti9RhSK?usp=sharing" target="_blank" class="flex items-center justify-between p-4 rounded-lg bg-slate-900/80 border border-slate-700 hover:border-sky-500/50 transition-colors group">
+                        <div class="flex items-center">
+                            <div class="bg-green-500/20 p-3 rounded-lg text-green-400 mr-4">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm12-3c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zM5 10h2a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v2a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-lg group-hover:text-sky-400 transition-colors">Audio & Sound Effects Pack 1</h4>
+                                <p class="text-sm text-slate-400">Background Music & SFX Collection</p>
+                            </div>
+                        </div>
+                        <span class="bg-slate-700 text-white text-xs px-3 py-1 rounded-full font-medium group-hover:bg-sky-500 transition-colors">Download</span>
+                    </a>
+
+                    <!-- Audio Pack 2 -->
+                    <a href="https://drive.google.com/file/d/1WQmxxXQta10QLsg5CKwGqV-PswH0pVzl/view?usp=drivesdk" target="_blank" class="flex items-center justify-between p-4 rounded-lg bg-slate-900/80 border border-slate-700 hover:border-sky-500/50 transition-colors group">
+                        <div class="flex items-center">
+                            <div class="bg-green-500/20 p-3 rounded-lg text-green-400 mr-4">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm12-3c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zM5 10h2a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v2a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-lg group-hover:text-sky-400 transition-colors">Audio & Sound Effects Pack 2</h4>
+                                <p class="text-sm text-slate-400">Additional Audio Resources</p>
+                            </div>
+                        </div>
+                        <span class="bg-slate-700 text-white text-xs px-3 py-1 rounded-full font-medium group-hover:bg-sky-500 transition-colors">Download</span>
+                    </a>
+                </div>
+
+                <div class="mt-8 p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-lg flex items-start">
+                    <svg class="w-6 h-6 text-yellow-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <p class="text-sm text-yellow-200">
+                        <strong class="font-bold text-yellow-400">বি:দ্র:</strong> Class এর PDF সব গ্রুপে দেওয়া আছে। আপনারা ওখান থেকে download করে নিয়েন।
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Disclaimer & Copyright Section -->
+    <div class="bg-slate-900 border-t border-slate-800 py-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-800/50 rounded-xl p-6 border border-slate-700 flex flex-col sm:flex-row items-center sm:items-start gap-4">
+                <div class="bg-slate-700/50 p-3 rounded-full text-slate-400 shrink-0">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-2">Copyright & Ownership Disclaimer</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed text-justify">
+                        এই কোর্সের ভিডিও লেকচার এবং আনুষঙ্গিক ম্যাটেরিয়ালসমূহ আমি (Abdullah Al MAmun) যখন <strong>APS IT Institute</strong>-এ কর্মরত ছিলাম, তখন তৈরি করা হয়েছিল। এই ভিডিও কনটেন্টগুলোর সম্পূর্ণ স্বত্ব ও মালিকানা <strong>APS IT Institute</strong>-এর। আমি বর্তমানে উক্ত প্রতিষ্ঠানে কর্মরত নেই, তবে তাদের <strong>বিশেষ অনুমতি সাপেক্ষে</strong> এই রেকর্ডিংগুলো শুধুমাত্র আমার পোর্টফোলিও প্রদর্শন এবং শিক্ষামূলক উদ্দেশ্যে আমার গিটহাব অ্যাকাউন্টে হোস্ট করেছি। অনুমতি ছাড়া এর বাণিজ্যিক ব্যবহার সম্পূর্ণ নিষিদ্ধ।
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="font-bold text-2xl tracking-wider mb-4">
+                <span class="text-white">TECH</span><span class="text-sky-400">PHILO</span>
+            </div>
+            <p class="text-slate-400 text-sm">
+                Curated & Created by Mamun. Helping students build high-income technical skills.
+            </p>
+            <div class="mt-6 text-slate-500 text-xs">
+                &copy; 2026 TechPhilo. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Accordion Script -->
+    <script>
+        function toggleAccordion(element) {
+            // Toggle active class on button
+            element.classList.toggle('active');
+            
+            // Get the content div
+            const content = element.nextElementSibling;
+            
+            // Toggle visibility
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                content.style.paddingTop = "0";
+                content.style.paddingBottom = "0";
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.style.paddingTop = "1.5rem";
+                content.style.paddingBottom = "1.5rem";
+            }
+        }
+    </script>
+</body>
+</html>
