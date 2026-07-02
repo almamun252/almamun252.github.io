@@ -8,24 +8,25 @@
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; margin: 0; padding: 0; color: #334155; }
         
         /* Hero Section */
-        .hero { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; padding: 80px 20px; text-align: center; }
+        .hero { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; padding: 60px 20px; text-align: center; }
         .hero h1 { font-size: 3em; margin-bottom: 10px; color: #38bdf8; }
-        .hero p { font-size: 1.2em; color: #cbd5e1; max-width: 600px; margin: 0 auto 30px auto; line-height: 1.6; }
-        
-        /* Download Button */
-        .download-btn { background: #10b981; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-size: 1.2em; font-weight: bold; display: inline-block; transition: 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .download-btn:hover { background: #059669; transform: translateY(-2px); }
+        .hero p { font-size: 1.2em; color: #cbd5e1; max-width: 600px; margin: 0 auto; line-height: 1.6; }
         
         /* General Container */
         .container { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
-        .section-title { text-align: center; font-size: 2em; margin-bottom: 40px; color: #0f172a; }
+        .section-title { text-align: center; font-size: 2em; margin-bottom: 30px; color: #0f172a; }
         
         /* Screenshots Grid */
-        .screenshots-section { margin-bottom: 60px; text-align: center; }
+        .screenshots-section { margin-bottom: 50px; text-align: center; }
         .screenshots-grid { display: flex; gap: 20px; overflow-x: auto; padding: 10px; justify-content: center; flex-wrap: wrap; }
         .screenshots-grid img { width: 220px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); border: 4px solid white; transition: 0.3s; }
         .screenshots-grid img:hover { transform: scale(1.05); }
 
+        /* Download Section */
+        .download-section { text-align: center; margin-bottom: 60px; padding: 20px; }
+        .download-btn { background: #10b981; color: white; padding: 16px 35px; text-decoration: none; border-radius: 8px; font-size: 1.25em; font-weight: bold; display: inline-block; transition: 0.3s; box-shadow: 0 4px 10px rgba(16, 185, 129, 0.2); }
+        .download-btn:hover { background: #059669; transform: translateY(-2px); box-shadow: 0 6px 15px rgba(16, 185, 129, 0.3); }
+        
         /* Features Grid */
         .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
         .feature-card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; transition: 0.3s; }
@@ -38,6 +39,13 @@
         .tech-tags { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
         .tag { background: #e2e8f0; color: #475569; padding: 8px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; }
         
+        /* Developer Section */
+        .developer-section { text-align: center; margin-top: 40px; padding: 40px; background: linear-gradient(to right, #ffffff, #f8fafc); border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
+        .profile-img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid white; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 15px; }
+        .developer-name { color: #0f172a; font-size: 1.8em; margin: 10px 0 5px 0; font-weight: bold; }
+        .developer-info { color: #475569; font-size: 1.1em; margin: 0; line-height: 1.6; }
+        .uni-text { color: #3b82f6; font-weight: bold; }
+
         /* Footer */
         .footer { text-align: center; margin-top: 50px; padding-bottom: 30px; }
         .back-link { text-decoration: none; color: #3b82f6; font-weight: bold; font-size: 1.1em; transition: 0.3s; }
@@ -49,9 +57,6 @@
     <div class="hero">
         <h1>💸 Nikhut Hisab</h1>
         <p>Your ultimate offline personal finance and budget tracker. Keep your daily income, expenses, and debts perfectly organized.</p>
-        
-        <!-- APK Download Link (সঠিক লিংক বসানো হয়েছে) -->
-        <a href="https://github.com/almamun252/Nikhut-Hisab-App/releases/download/v4.2.0/Nikhut-Hisab-v4.2.0.apk" class="download-btn">⬇️ Download APK (v4.2.0)</a>
     </div>
 
     <div class="container">
@@ -60,13 +65,16 @@
         <div class="screenshots-section">
             <h2 class="section-title">📱 App Interface</h2>
             <div class="screenshots-grid">
-                <!-- ছবি বসানোর জায়গা (src এর ভেতরে ছবির লিংক বা নাম দিন) -->
-                <img src="nikhut-hisab/images/908_1x_shots_so.png" alt="Screenshot 1">
-                <img src="nikhut-hisab/images/429_1x_shots_so.png" alt="Screenshot 2">
-                <img src="nikhut-hisab/images/216_1x_shots_so.png" alt="Screenshot 3">
-                <img src="nikhut-hisab/images/235_1x_shots_so.png" alt="Screenshot 4">
+                <img src="images/908_1x_shots_so.png" alt="Screenshot 1">
+                <img src="images/429_1x_shots_so.png" alt="Screenshot 2">
+                <img src="images/216_1x_shots_so.png" alt="Screenshot 3">
+                <img src="images/235_1x_shots_so.png" alt="Screenshot 4">
             </div>
-            <p style="color: #64748b; font-size: 0.9em; margin-top: 15px;">* Replace the image paths above with your actual screenshot files.</p>
+        </div>
+
+        <!-- Download Section -->
+        <div class="download-section">
+            <a href="https://github.com/almamun252/Nikhut-Hisab-App/releases/download/v4.2.0/Nikhut-Hisab-v4.2.0.apk" class="download-btn">⬇️ Download APK (v4.2.0)</a>
         </div>
 
         <!-- Features Section -->
@@ -100,6 +108,19 @@
                 <span class="tag">MVVM Architecture</span>
                 <span class="tag">Room Database</span>
             </div>
+        </div>
+
+        <!-- Developer Portfolio Section -->
+        <div class="developer-section">
+            <!-- ইউজারের প্রোফাইল পিকচার -->
+            <img src="../video-editing-course/profile.jpg" alt="Abdullah Al Mamun" class="profile-img">
+            
+            <h3 style="color: #64748b; font-size: 1em; text-transform: uppercase; letter-spacing: 2px; margin: 0;">Designed & Developed By</h3>
+            <h2 class="developer-name">Abdullah Al Mamun</h2>
+            <p class="developer-info">
+                Computer Science & Engineering Student <br>
+                @ <span class="uni-text">Daffodil International University (DIU)</span>
+            </p>
         </div>
 
         <!-- Footer -->
