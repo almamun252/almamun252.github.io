@@ -9,7 +9,9 @@
         
         /* Hero Section */
         .hero { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; padding: 60px 20px; text-align: center; }
-        .hero h1 { font-size: 3em; margin-bottom: 10px; color: #38bdf8; }
+        .hero-title { display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 15px; }
+        .app-logo { width: 55px; height: 55px; border-radius: 12px; object-fit: contain; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .hero h1 { font-size: 3em; margin: 0; color: #38bdf8; }
         .hero p { font-size: 1.2em; color: #cbd5e1; max-width: 600px; margin: 0 auto; line-height: 1.6; }
         
         /* General Container */
@@ -55,7 +57,10 @@
 <body>
     <!-- Hero Section (Top) -->
     <div class="hero">
-        <h1>💸 Nikhut Hisab</h1>
+        <div class="hero-title">
+            <img src="images/app_logo.png" alt="Nikhut Hisab Logo" class="app-logo">
+            <h1>Nikhut Hisab</h1>
+        </div>
         <p>Your ultimate offline personal finance and budget tracker. Keep your daily income, expenses, and debts perfectly organized.</p>
     </div>
 
@@ -96,6 +101,11 @@
                 <h3>💱 Multi-Currency</h3>
                 <p>Track your finances across different currencies easily without any hassle.</p>
             </div>
+            <!-- নতুন যুক্ত করা গুগল ড্রাইভ ব্যাকআপ ফিচার -->
+            <div class="feature-card">
+                <h3>☁️ Google Drive Backup</h3>
+                <p>Securely backup and restore all your financial data directly with your Google Drive account.</p>
+            </div>
         </div>
 
         <!-- Tech Stack Section -->
@@ -112,7 +122,6 @@
 
         <!-- Developer Portfolio Section -->
         <div class="developer-section">
-            <!-- ইউজারের প্রোফাইল পিকচার -->
             <img src="../video-editing-course/profile.jpg" alt="Abdullah Al Mamun" class="profile-img">
             
             <h3 style="color: #64748b; font-size: 1em; text-transform: uppercase; letter-spacing: 2px; margin: 0;">Designed & Developed By</h3>
